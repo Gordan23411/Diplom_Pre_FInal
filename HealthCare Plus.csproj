@@ -133,6 +133,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ApptChargesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\DoctorsDataSet.cs">
+      <DependentUpon>DoctorsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\DoctorsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -389,7 +392,6 @@
     <None Include="DataSets\PatientsDataSet.xss">
       <DependentUpon>PatientsDataSet.xsd</DependentUpon>
     </None>
-    <None Include="HealthCare Plus_1_TemporaryKey.pfx" />
     <None Include="DataSets\HealthcareplusDataSet.xsc">
       <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
     </None>

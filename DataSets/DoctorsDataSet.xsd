@@ -24,7 +24,7 @@ FROM            DoctorProfiles INNER JOIN
             <Mappings>
               <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
               <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
-              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="email" DataSetColumn="Почта" />
               <Mapping SourceColumn="hospital_address" DataSetColumn="hospital_address" />
               <Mapping SourceColumn="home_address" DataSetColumn="home_address" />
               <Mapping SourceColumn="location" DataSetColumn="location" />
@@ -39,69 +39,69 @@ FROM            DoctorProfiles INNER JOIN
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+        <xs:element name="DataTable1" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="first_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_UserColumnName="first_name">
+              <xs:element name="first_name" msprop:Generator_UserColumnName="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="last_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_UserColumnName="last_name">
+              <xs:element name="last_name" msprop:Generator_UserColumnName="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_UserColumnName="email">
+              <xs:element name="Почта" msprop:Generator_UserColumnName="Почта" msprop:Generator_ColumnPropNameInTable="ПочтаColumn" msprop:Generator_ColumnPropNameInRow="Почта" msprop:Generator_ColumnVarNameInTable="columnПочта">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="hospital_address" msprop:Generator_ColumnPropNameInRow="hospital_address" msprop:Generator_ColumnPropNameInTable="hospital_addressColumn" msprop:Generator_ColumnVarNameInTable="columnhospital_address" msprop:Generator_UserColumnName="hospital_address">
+              <xs:element name="hospital_address" msprop:Generator_UserColumnName="hospital_address" msprop:Generator_ColumnPropNameInTable="hospital_addressColumn" msprop:Generator_ColumnPropNameInRow="hospital_address" msprop:Generator_ColumnVarNameInTable="columnhospital_address">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="home_address" msprop:Generator_ColumnPropNameInRow="home_address" msprop:Generator_ColumnPropNameInTable="home_addressColumn" msprop:Generator_ColumnVarNameInTable="columnhome_address" msprop:Generator_UserColumnName="home_address">
+              <xs:element name="home_address" msprop:Generator_UserColumnName="home_address" msprop:Generator_ColumnPropNameInTable="home_addressColumn" msprop:Generator_ColumnPropNameInRow="home_address" msprop:Generator_ColumnVarNameInTable="columnhome_address">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="location" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_UserColumnName="location">
+              <xs:element name="location" msprop:Generator_UserColumnName="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnVarNameInTable="columnlocation">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="contact_no" msprop:Generator_ColumnPropNameInRow="contact_no" msprop:Generator_ColumnPropNameInTable="contact_noColumn" msprop:Generator_ColumnVarNameInTable="columncontact_no" msprop:Generator_UserColumnName="contact_no">
+              <xs:element name="contact_no" msprop:Generator_UserColumnName="contact_no" msprop:Generator_ColumnPropNameInTable="contact_noColumn" msprop:Generator_ColumnPropNameInRow="contact_no" msprop:Generator_ColumnVarNameInTable="columncontact_no">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="12" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="specialization" msprop:Generator_ColumnPropNameInRow="specialization" msprop:Generator_ColumnPropNameInTable="specializationColumn" msprop:Generator_ColumnVarNameInTable="columnspecialization" msprop:Generator_UserColumnName="specialization">
+              <xs:element name="specialization" msprop:Generator_UserColumnName="specialization" msprop:Generator_ColumnPropNameInTable="specializationColumn" msprop:Generator_ColumnPropNameInRow="specialization" msprop:Generator_ColumnVarNameInTable="columnspecialization">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="qualification" msprop:Generator_ColumnPropNameInRow="qualification" msprop:Generator_ColumnPropNameInTable="qualificationColumn" msprop:Generator_ColumnVarNameInTable="columnqualification" msprop:Generator_UserColumnName="qualification">
+              <xs:element name="qualification" msprop:Generator_UserColumnName="qualification" msprop:Generator_ColumnPropNameInTable="qualificationColumn" msprop:Generator_ColumnPropNameInRow="qualification" msprop:Generator_ColumnVarNameInTable="columnqualification">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

@@ -136,7 +136,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Admin
                     bool sqlQueryStatus = DBDeleteQuery(selectedMemberID);
                     if (sqlQueryStatus)
                     {
-                        MessageBox.Show("Пользователь успешно удален", "Success", default, MessageBoxIcon.Information);
+                        MessageBox.Show("Пользователь успешно удален", "Успешно", default, MessageBoxIcon.Information);
                         LoadStaffData(); // REFRESH DATA GRID VIEW
 
                         ResetInputs();

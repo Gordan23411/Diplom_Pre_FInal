@@ -124,7 +124,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 adapter.Fill(dataTable);
                 if (dataTable.Rows.Count == 0)
                 {
-                    MessageBox.Show("No Appointments Found", "Not Found", default, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Назначенные встречи не найдены", "Не найдено", default, MessageBoxIcon.Asterisk);
                     sqlCon.Close();
                     return;
                 }
@@ -135,7 +135,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             {
                 sqlCon.Close();
                 Console.WriteLine(ex.Message);
-                MessageBox.Show("Server Error", "Error", default, MessageBoxIcon.Error);
+                MessageBox.Show("Ошибка сервера", "Ошибка", default, MessageBoxIcon.Error);
             }
         }
 

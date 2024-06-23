@@ -143,7 +143,7 @@
             this.staffBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.staffBtn.Size = new System.Drawing.Size(200, 60);
             this.staffBtn.TabIndex = 3;
-            this.staffBtn.Text = "Персонал";
+            this.staffBtn.Text = "Операторы";
             this.staffBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.staffBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.staffBtn.UseVisualStyleBackColor = false;

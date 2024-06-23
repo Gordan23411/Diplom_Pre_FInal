@@ -60,13 +60,13 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 bool sqlQueryStatus = DBQuery("INSERT");
                 if (sqlQueryStatus)
                 {
-                    MessageBox.Show("Schedule Added Successfully", "Success", default, MessageBoxIcon.Information);
+                    MessageBox.Show("Расписание успешно добавлено", "Успех", default, MessageBoxIcon.Information);
                     LoadSchedules();
                     ResetForm();
                 }
                 else
                 {
-                    MessageBox.Show("Something Went Wrong", "Server Error", default, MessageBoxIcon.Error);
+                    MessageBox.Show("Что-то пошло не так", "Ошибка сервера", default, MessageBoxIcon.Error);
                 }
             }
         }
@@ -91,13 +91,13 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 bool sqlQueryStatus = DBQuery("UPDATE", selectedScheduleID);
                 if (sqlQueryStatus)
                 {
-                    MessageBox.Show("Schedule Updated Successfully", "Success", default, MessageBoxIcon.Information);
+                    MessageBox.Show("Расписание успешно обновлено", "Успех", default, MessageBoxIcon.Information);
                     LoadSchedules();
                     ResetForm();
                 }
                 else
                 {
-                    MessageBox.Show("Something Went Wrong", "Server Error", default, MessageBoxIcon.Error);
+                    MessageBox.Show("Что-то пошло не так", "Ошибка сервера", default, MessageBoxIcon.Error);
                 }
             }
         }
@@ -107,8 +107,8 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             if (isScheduleSelected)
             {
                 var confirmation = MessageBox.Show(
-                    "Are You Sure You Want To Delete This Schedule?",
-                    "Confirm",
+                    "Вы Уверены, Что Хотите Удалить Это Расписание?",
+                    "Подтверждение",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question
                 );
@@ -118,8 +118,8 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                     if (sqlQueryStatus)
                     {
                         MessageBox.Show(
-                            "Schedule Deleted Successfully",
-                            "Success",
+                            "Расписание успешно удалено",
+                            "Успех",
                             default,
                             MessageBoxIcon.Information
                         );
@@ -128,7 +128,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                     }
                     else
                     {
-                        MessageBox.Show("Something Went Wrong", "Server Error", default, MessageBoxIcon.Error);
+                        MessageBox.Show("Что-то пошло не так", "Ошибка сервера", default, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -150,8 +150,8 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             if (activeSearchValues.Length == 0)
             {
                 MessageBox.Show(
-                    "Please Enter At Least One Search Value",
-                    "Validation Error",
+                    "Пожалуйста, Введите Хотя Бы Одно Значение для Поиска",
+                    "Ошибка проверки",
                     default,
                     MessageBoxIcon.Error
                 );
@@ -204,7 +204,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 //CHECK IF NO RECOARD FOUND
                 if (dataTabel.Rows.Count == 0)
                 {
-                    MessageBox.Show("Расписание не найдено", "No Results", default, MessageBoxIcon.Information);
+                    MessageBox.Show("Расписание не найдено", "Никаких результатов", default, MessageBoxIcon.Information);
                     return;
                 }
 

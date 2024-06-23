@@ -23,6 +23,7 @@ namespace HealthCare_Plus
             AdminLoginForm adminLoginForm = new AdminLoginForm();
             this.Hide();
             adminLoginForm.Show();
+
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
@@ -38,5 +39,12 @@ namespace HealthCare_Plus
             this.Hide();
             staffLoginForm.Show();
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+
+

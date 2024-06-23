@@ -57,5 +57,10 @@ namespace HealthCare_Plus.Forms.Dashboard.Reports
             ReportView.LocalReport.DataSources.Add(chargesDataSource);
             this.ReportView.RefreshReport();
         }
+
+        private void ReportView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

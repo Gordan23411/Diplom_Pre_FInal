@@ -25,11 +25,11 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return label + " is a required field";
+                return label + " это обязательное для заполнения поле";
             }
             if (value.Length < 2)
             {
-                return label + " must be at least 2 charactors";
+                return label + " должно быть не менее 2 символов ";
             }
             return "valid";
         }
@@ -39,13 +39,13 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "Email is a required field";
+                return "Поле электронной почты является обязательным для заполнения";
             }
             string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             Regex regex = new Regex(emailPattern);
             if (!regex.IsMatch(value))
             {
-                return "Invalid email address";
+                return "Неверный адрес электронной почты";
             }
             return "valid";
         }
@@ -55,11 +55,11 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "Password is a required field";
+                return "Пароль - это поле, обязательное для заполнения";
             }
             if (value.Length < 8)
             {
-                return "Password must be at least 8 charactors";
+                return "Пароль должен содержать не менее 8 символов";
             }
             return "valid";
         }
@@ -69,21 +69,21 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "Phone number is a required field";
+                return "Номер телефона является обязательным полем для заполнения";
             }
             if (value.Length > 10)
             {
-                return "Phone number must be 10 charactors";
+                return "Номер телефона должен состоять из 10 символов";
             }
             if (value.Length < 10)
             {
-                return "Phone number must be 10 charactors";
+                return "Номер телефона должен состоять из 10 символов";
             }
             string phonePattern = @"^(\d{10})$";
             Regex regex = new Regex(phonePattern);
             if (!regex.IsMatch(value))
             {
-                return "Invalid phone number";
+                return "Неверный номер телефона";
             }
             return "valid";
         }
@@ -93,20 +93,20 @@ namespace HealthCare_Plus.Utils
         {
             if (value == null)
             {
-                return label + " is a required field";
+                return label + " это обязательное для заполнения поле";
             }
             if (timeLine == "future")
             {
                 if (value < DateTime.Now)
                 {
-                    return label + " must be in the future date";
+                    return label + " должно быть, дата в будующем";
                 }
             }
             else
             {
                 if (value > DateTime.Now)
                 {
-                    return label + " must be a past date";
+                    return label + " должно быть, это прошлая дата";
                 }
             }
             return "valid";
@@ -117,7 +117,7 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return label + " is a required field";
+                return label + " это обязательное для заполнения поле";
             }
 
             //VALIDATE INVALID NUMBER
@@ -126,7 +126,7 @@ namespace HealthCare_Plus.Utils
             {
                 if (result < 0)
                 {
-                    return label + " invalid selection";
+                    return label + " недопустимый выбор";
                 }
             }
 
@@ -134,7 +134,7 @@ namespace HealthCare_Plus.Utils
             {
                 if (value == "0")
                 {
-                    return label + " is a required field";
+                    return label + " это обязательное для заполнения поле";
                 }
             }
 
@@ -146,7 +146,7 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return label + " is a required field";
+                return label + " это обязательное для заполнения поле";
             }
 
             bool isValidNumber = int.TryParse(value, out int result);
@@ -154,7 +154,7 @@ namespace HealthCare_Plus.Utils
             {
                 if (result < 0)
                 {
-                    return label + " invalid number";
+                    return label + " неверный номер";
                 }
             }
 
@@ -162,7 +162,7 @@ namespace HealthCare_Plus.Utils
             Regex regex = new Regex(numberPattern);
             if (!regex.IsMatch(value))
             {
-                return label + " must be a number";
+                return label + " должны быть цифры";
             }
             return "valid";
         }

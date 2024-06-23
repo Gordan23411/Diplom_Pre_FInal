@@ -220,9 +220,9 @@
             // 
             this.avatarImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.avatarImage.Image = global::HealthCare_Plus.Properties.Resources.user;
-            this.avatarImage.Location = new System.Drawing.Point(834, 9);
+            this.avatarImage.Location = new System.Drawing.Point(811, 5);
             this.avatarImage.Name = "avatarImage";
-            this.avatarImage.Size = new System.Drawing.Size(38, 35);
+            this.avatarImage.Size = new System.Drawing.Size(53, 41);
             this.avatarImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.avatarImage.TabIndex = 14;
             this.avatarImage.TabStop = false;
@@ -231,11 +231,11 @@
             // 
             this.username_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.username_label.AutoSize = true;
-            this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.username_label.ForeColor = System.Drawing.Color.White;
-            this.username_label.Location = new System.Drawing.Point(828, 47);
+            this.username_label.Location = new System.Drawing.Point(804, 49);
             this.username_label.Name = "username_label";
-            this.username_label.Size = new System.Drawing.Size(47, 13);
+            this.username_label.Size = new System.Drawing.Size(68, 20);
             this.username_label.TabIndex = 15;
             this.username_label.Text = "System";
             // 
@@ -249,7 +249,7 @@
             this.welcome_text.Name = "welcome_text";
             this.welcome_text.Size = new System.Drawing.Size(151, 20);
             this.welcome_text.TabIndex = 12;
-            this.welcome_text.Text = "Меню персонала";
+            this.welcome_text.Text = "Меню оператора";
             // 
             // bodyPanel
             // 
@@ -272,7 +272,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StaffDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Staff Dashboard";
+            this.Text = "Меню оператора";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StaffDashboard_Load);
             this.navigationPanel.ResumeLayout(false);

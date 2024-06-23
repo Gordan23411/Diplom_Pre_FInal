@@ -110,7 +110,7 @@
             this.CardPaymentPanel.Controls.Add(this.exp_date_label);
             this.CardPaymentPanel.Controls.Add(this.card_number_label);
             this.CardPaymentPanel.Controls.Add(this.name_on_card_label);
-            this.CardPaymentPanel.Location = new System.Drawing.Point(188, 184);
+            this.CardPaymentPanel.Location = new System.Drawing.Point(188, 168);
             this.CardPaymentPanel.Name = "CardPaymentPanel";
             this.CardPaymentPanel.Size = new System.Drawing.Size(424, 229);
             this.CardPaymentPanel.TabIndex = 34;
@@ -237,9 +237,9 @@
             this.CashLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CashLabel.Location = new System.Drawing.Point(88, 22);
             this.CashLabel.Name = "CashLabel";
-            this.CashLabel.Size = new System.Drawing.Size(96, 17);
+            this.CashLabel.Size = new System.Drawing.Size(126, 17);
             this.CashLabel.TabIndex = 17;
-            this.CashLabel.Text = "Cash Amount:";
+            this.CashLabel.Text = "Сумма наличных :";
             // 
             // MakePaymentBtn
             // 
@@ -253,7 +253,7 @@
             this.MakePaymentBtn.Name = "MakePaymentBtn";
             this.MakePaymentBtn.Size = new System.Drawing.Size(185, 38);
             this.MakePaymentBtn.TabIndex = 33;
-            this.MakePaymentBtn.Text = "Make Payment";
+            this.MakePaymentBtn.Text = "Произвести оплату";
             this.MakePaymentBtn.UseVisualStyleBackColor = false;
             this.MakePaymentBtn.Click += new System.EventHandler(this.MakePaymentBtn_Click);
             // 
@@ -273,9 +273,9 @@
             this.BalanceAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalanceAmount.Location = new System.Drawing.Point(211, 82);
             this.BalanceAmount.Name = "BalanceAmount";
-            this.BalanceAmount.Size = new System.Drawing.Size(71, 17);
+            this.BalanceAmount.Size = new System.Drawing.Size(70, 17);
             this.BalanceAmount.TabIndex = 21;
-            this.BalanceAmount.Text = "RS: 60.00";
+            this.BalanceAmount.Text = "РУ: 60.00";
             // 
             // TotalLableMid
             // 
@@ -283,11 +283,11 @@
             this.TotalLableMid.AutoSize = true;
             this.TotalLableMid.Cursor = System.Windows.Forms.Cursors.Default;
             this.TotalLableMid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLableMid.Location = new System.Drawing.Point(88, 52);
+            this.TotalLableMid.Location = new System.Drawing.Point(76, 52);
             this.TotalLableMid.Name = "TotalLableMid";
-            this.TotalLableMid.Size = new System.Drawing.Size(44, 17);
+            this.TotalLableMid.Size = new System.Drawing.Size(138, 17);
             this.TotalLableMid.TabIndex = 18;
-            this.TotalLableMid.Text = "Total:";
+            this.TotalLableMid.Text = "Вся сумма коплате:";
             // 
             // TotalAmountMid
             // 
@@ -297,9 +297,9 @@
             this.TotalAmountMid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalAmountMid.Location = new System.Drawing.Point(211, 52);
             this.TotalAmountMid.Name = "TotalAmountMid";
-            this.TotalAmountMid.Size = new System.Drawing.Size(79, 17);
+            this.TotalAmountMid.Size = new System.Drawing.Size(78, 17);
             this.TotalAmountMid.TabIndex = 20;
-            this.TotalAmountMid.Text = "RS: 120.00";
+            this.TotalAmountMid.Text = "РУ: 120.00";
             // 
             // BalanceLabel
             // 
@@ -309,9 +309,9 @@
             this.BalanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalanceLabel.Location = new System.Drawing.Point(88, 82);
             this.BalanceLabel.Name = "BalanceLabel";
-            this.BalanceLabel.Size = new System.Drawing.Size(63, 17);
+            this.BalanceLabel.Size = new System.Drawing.Size(60, 17);
             this.BalanceLabel.TabIndex = 19;
-            this.BalanceLabel.Text = "Balance:";
+            this.BalanceLabel.Text = "Баланс:";
             // 
             // PaymentMethod
             // 
@@ -381,7 +381,7 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "PaymentForm";
-            this.Text = "PaymentForm";
+            this.Text = "Оплата";
             this.Load += new System.EventHandler(this.PaymentForm_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();

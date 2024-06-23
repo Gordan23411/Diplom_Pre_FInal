@@ -147,7 +147,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
         {
             if (ChargesDataTable.Rows.Count < 1)
             {
-                MessageBox.Show("Please add charges", "Validation Error", default, MessageBoxIcon.Error);
+                MessageBox.Show("Пожалуйста, добавьте дополнительные расходы", "Ошибка проверки", default, MessageBoxIcon.Error);
                 return;
             }
 
@@ -169,7 +169,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             }
             else
             {
-                MessageBox.Show("Something went wrong", "Error", default, MessageBoxIcon.Error);
+                MessageBox.Show("Что-то пошло не так", "Ошибка", default, MessageBoxIcon.Error);
             }
         }
 
@@ -241,7 +241,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
         //HIDE THIS FORM ON PAYMENT DONE
         private void PaymentFormClosed(FormClosedEventArgs args)
         {
-            MessageBox.Show("Appointment Added Sccessfuly", "Success", default, MessageBoxIcon.Information);
+            MessageBox.Show("Встреча была успешно назначена", "Успешно", default, MessageBoxIcon.Information);
             this.Close();
         }
 
@@ -262,7 +262,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 return true;
             }
             //SHOW ERRORS
-            MessageBox.Show(string.Join("\n", activeErrors), "Validation Error", default, MessageBoxIcon.Error);
+            MessageBox.Show(string.Join("\n", activeErrors), "Ошибка проверки", default, MessageBoxIcon.Error);
 
             return false;
         }
@@ -288,7 +288,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 return true;
             }
             //SHOW ERRORS
-            MessageBox.Show(string.Join("\n", activeErrors), "Validation Error", default, MessageBoxIcon.Error);
+            MessageBox.Show(string.Join("\n", activeErrors), "Ошибка проверки", default, MessageBoxIcon.Error);
 
             return false;
         }
@@ -300,6 +300,11 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             DeleteBtn.Enabled = false;
             ChargeForInput.Text = "";
             AmountInput.Text = "";
+        }
+
+        private void ChargesGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

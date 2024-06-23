@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.SearchPanel = new System.Windows.Forms.Panel();
             this.Search_btn = new System.Windows.Forms.Button();
@@ -190,9 +190,9 @@
             this.search_by_label.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.search_by_label.Location = new System.Drawing.Point(403, 18);
             this.search_by_label.Name = "search_by_label";
-            this.search_by_label.Size = new System.Drawing.Size(72, 16);
+            this.search_by_label.Size = new System.Drawing.Size(69, 16);
             this.search_by_label.TabIndex = 5;
-            this.search_by_label.Text = "Search By:";
+            this.search_by_label.Text = "Поиск по:";
             // 
             // CrudPanel
             // 
@@ -304,12 +304,12 @@
             this.room_number_input.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.room_number_input.FormattingEnabled = true;
             this.room_number_input.Items.AddRange(new object[] {
-            "Room 1",
-            "Room 2",
-            "Room 3",
-            "Room 4",
-            "Room 5",
-            "Room 6"});
+            "Комната 1",
+            "Комната 2",
+            "Комната 3",
+            "Комната 4",
+            "Комната 5",
+            "Комната 6"});
             this.room_number_input.Location = new System.Drawing.Point(390, 41);
             this.room_number_input.Name = "room_number_input";
             this.room_number_input.Size = new System.Drawing.Size(152, 21);
@@ -420,18 +420,19 @@
             this.ScheduleDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ScheduleDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.ScheduleDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ScheduleDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ScheduleDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ScheduleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ScheduleDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ScheduleDataGridView.EnableHeadersVisualStyles = false;
+            this.ScheduleDataGridView.GridColor = System.Drawing.Color.Black;
             this.ScheduleDataGridView.Location = new System.Drawing.Point(0, 0);
             this.ScheduleDataGridView.MultiSelect = false;
             this.ScheduleDataGridView.Name = "ScheduleDataGridView";
@@ -453,7 +454,7 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "ScheduleForm";
-            this.Text = "ScheduleForm";
+            this.Text = "Назначение приемов";
             this.Load += new System.EventHandler(this.ScheduleForm_Load);
             this.TopPanel.ResumeLayout(false);
             this.SearchPanel.ResumeLayout(false);

@@ -340,6 +340,7 @@
             this.AppointmentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AppointmentsGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AppointmentsGridView.EnableHeadersVisualStyles = false;
+            this.AppointmentsGridView.GridColor = System.Drawing.Color.Black;
             this.AppointmentsGridView.Location = new System.Drawing.Point(0, 0);
             this.AppointmentsGridView.MultiSelect = false;
             this.AppointmentsGridView.Name = "AppointmentsGridView";
@@ -365,7 +366,7 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.TopPanel);
             this.Name = "AppoinmentForm";
-            this.Text = "AppoinmentForm";
+            this.Text = "Управление приемами";
             this.Load += new System.EventHandler(this.AppoinmentForm_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();

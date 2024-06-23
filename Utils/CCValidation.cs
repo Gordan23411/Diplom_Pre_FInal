@@ -9,21 +9,21 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "Credit card number is a required field";
+                return "Номер кредитной карты является обязательным полем для заполнения";
             }
             if (value.Length > 16)
             {
-                return "Credit card number must be 16 charactors";
+                return "Номер кредитной карты должен состоять из 16 символов";
             }
             if (value.Length < 16)
             {
-                return "Credit card number must be 16 charactors";
+                return "Номер кредитной карты должен состоять из 16 символов";
             }
             string creditCardPattern = @"^(\d{16})$";
             Regex regex = new Regex(creditCardPattern);
             if (!regex.IsMatch(value))
             {
-                return "Invalid credit card number";
+                return "Неверный номер кредитной карты";
             }
             return "valid";
         }
@@ -33,13 +33,13 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "Expiry date is a required field";
+                return "Дата истечения срока действия - обязательное поле для заполнения";
             }
             string expDatePattern = @"^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$";
             Regex regex = new Regex(expDatePattern);
             if (!regex.IsMatch(value))
             {
-                return "Invalid expiry date";
+                return "Недействительный срок годности";
             }
             return "valid";
         }
@@ -49,21 +49,21 @@ namespace HealthCare_Plus.Utils
         {
             if (string.IsNullOrEmpty(value))
             {
-                return "CVV is a required field";
+                return "CVV - это обязательное для заполнения поле";
             }
             if (value.Length > 3)
             {
-                return "CVV must be 3 charactors";
+                return "CVV должен состоять из 3 символов";
             }
             if (value.Length < 3)
             {
-                return "CVV must be 3 charactors";
+                return "CVV должен состоять из 3 символов";
             }
             string cvvPattern = @"^(\d{3})$";
             Regex regex = new Regex(cvvPattern);
             if (!regex.IsMatch(value))
             {
-                return "Invalid CVV";
+                return "Недействительный CVV";
             }
             return "valid";
         }

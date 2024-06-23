@@ -246,6 +246,7 @@
             this.doctorsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.doctorsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.doctorsDataGridView.EnableHeadersVisualStyles = false;
+            this.doctorsDataGridView.GridColor = System.Drawing.Color.Black;
             this.doctorsDataGridView.Location = new System.Drawing.Point(0, 0);
             this.doctorsDataGridView.MultiSelect = false;
             this.doctorsDataGridView.Name = "doctorsDataGridView";

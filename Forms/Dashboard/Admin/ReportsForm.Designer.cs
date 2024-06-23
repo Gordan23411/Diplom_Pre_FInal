@@ -33,11 +33,11 @@
             this.Title_label = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.BodyPanel = new System.Windows.Forms.Panel();
-            this.reportsView = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.PaymentsReportBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DoctorsReportBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PatientsReportBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.PaymentsReportBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BodyPanel = new System.Windows.Forms.Panel();
+            this.reportsView = new Microsoft.Reporting.WinForms.ReportViewer();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -74,35 +74,29 @@
             this.guna2GradientPanel1.Controls.Add(this.PatientsReportBtn);
             this.guna2GradientPanel1.Controls.Add(this.Title_label);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(884, 136);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
-            // BodyPanel
+            // PaymentsReportBtn
             // 
-            this.BodyPanel.Controls.Add(this.reportsView);
-            this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BodyPanel.Location = new System.Drawing.Point(0, 136);
-            this.BodyPanel.Name = "BodyPanel";
-            this.BodyPanel.Size = new System.Drawing.Size(884, 375);
-            this.BodyPanel.TabIndex = 25;
-            // 
-            // reportsView
-            // 
-            this.reportsView.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DoctorsDataSet";
-            reportDataSource1.Value = null;
-            this.reportsView.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportsView.LocalReport.ReportEmbeddedResource = "HealthCare_Plus.Forms.Dashboard.Reports.DoctorsReport.rdlc";
-            this.reportsView.Location = new System.Drawing.Point(0, 0);
-            this.reportsView.Name = "reportsView";
-            this.reportsView.ServerReport.BearerToken = null;
-            this.reportsView.Size = new System.Drawing.Size(884, 375);
-            this.reportsView.TabIndex = 0;
-            this.reportsView.Load += new System.EventHandler(this.reportsView_Load);
+            this.PaymentsReportBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.PaymentsReportBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.PaymentsReportBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PaymentsReportBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PaymentsReportBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PaymentsReportBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PaymentsReportBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PaymentsReportBtn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PaymentsReportBtn.ForeColor = System.Drawing.Color.Black;
+            this.PaymentsReportBtn.Location = new System.Drawing.Point(557, 60);
+            this.PaymentsReportBtn.Name = "PaymentsReportBtn";
+            this.PaymentsReportBtn.Size = new System.Drawing.Size(119, 45);
+            this.PaymentsReportBtn.TabIndex = 4;
+            this.PaymentsReportBtn.Text = "Отчеты об оплатах";
+            this.PaymentsReportBtn.Click += new System.EventHandler(this.PaymentsReportBtn_Click_1);
             // 
             // DoctorsReportBtn
             // 
@@ -140,23 +134,28 @@
             this.PatientsReportBtn.Text = "Отчет о пациентах";
             this.PatientsReportBtn.Click += new System.EventHandler(this.PatientsReportBtn_Click_1);
             // 
-            // PaymentsReportBtn
+            // BodyPanel
             // 
-            this.PaymentsReportBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.PaymentsReportBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.PaymentsReportBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.PaymentsReportBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.PaymentsReportBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.PaymentsReportBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.PaymentsReportBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PaymentsReportBtn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PaymentsReportBtn.ForeColor = System.Drawing.Color.Black;
-            this.PaymentsReportBtn.Location = new System.Drawing.Point(557, 60);
-            this.PaymentsReportBtn.Name = "PaymentsReportBtn";
-            this.PaymentsReportBtn.Size = new System.Drawing.Size(119, 45);
-            this.PaymentsReportBtn.TabIndex = 4;
-            this.PaymentsReportBtn.Text = "Отчеты об оплатах";
-            this.PaymentsReportBtn.Click += new System.EventHandler(this.PaymentsReportBtn_Click_1);
+            this.BodyPanel.Controls.Add(this.reportsView);
+            this.BodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BodyPanel.Location = new System.Drawing.Point(0, 136);
+            this.BodyPanel.Name = "BodyPanel";
+            this.BodyPanel.Size = new System.Drawing.Size(884, 375);
+            this.BodyPanel.TabIndex = 25;
+            // 
+            // reportsView
+            // 
+            this.reportsView.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DoctorsDataSet";
+            reportDataSource1.Value = null;
+            this.reportsView.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportsView.LocalReport.ReportEmbeddedResource = "HealthCare_Plus.Forms.Dashboard.Reports.DoctorsReport.rdlc";
+            this.reportsView.Location = new System.Drawing.Point(0, 0);
+            this.reportsView.Name = "reportsView";
+            this.reportsView.ServerReport.BearerToken = null;
+            this.reportsView.Size = new System.Drawing.Size(884, 375);
+            this.reportsView.TabIndex = 0;
+            this.reportsView.Load += new System.EventHandler(this.reportsView_Load);
             // 
             // guna2Elipse1
             // 

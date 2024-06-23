@@ -300,12 +300,14 @@
             this.ChargesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ChargesGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChargesGridView.EnableHeadersVisualStyles = false;
+            this.ChargesGridView.GridColor = System.Drawing.Color.Black;
             this.ChargesGridView.Location = new System.Drawing.Point(0, 0);
             this.ChargesGridView.MultiSelect = false;
             this.ChargesGridView.Name = "ChargesGridView";
             this.ChargesGridView.ReadOnly = true;
             this.ChargesGridView.Size = new System.Drawing.Size(884, 140);
             this.ChargesGridView.TabIndex = 24;
+            this.ChargesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ChargesGridView_CellContentClick);
             this.ChargesGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnCellDoubleClickHandler);
             // 
             // Select_Schedule
@@ -455,7 +457,7 @@
             this.Controls.Add(this.BodyPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Name = "AddAppointmentForm";
-            this.Text = "AddAppointmentForm";
+            this.Text = "Приемы";
             this.Load += new System.EventHandler(this.AddAppointmentForm_Load);
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();

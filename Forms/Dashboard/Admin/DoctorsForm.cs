@@ -458,5 +458,10 @@ namespace HealthCare_Plus.Forms.Dashboard.Admin
         {
 
         }
+
+        private void phone_no_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

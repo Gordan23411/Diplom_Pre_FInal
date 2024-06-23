@@ -116,7 +116,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
             {
                 if (string.IsNullOrEmpty(CashInput.Text))
                 {
-                    MessageBox.Show("Cash amount is required", "Ошибка", default, MessageBoxIcon.Error);
+                    MessageBox.Show("Требуется сумма наличными", "Ошибка", default, MessageBoxIcon.Error);
                     return false;
                 }
                 bool cashAmount = int.TryParse(CashInput.Text, out int amount);
@@ -124,7 +124,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                 {
                     if (amount < total)
                     {
-                        MessageBox.Show("Недостаточное денег", "Ошибка", default, MessageBoxIcon.Error);
+                        MessageBox.Show("Недостаточное средств", "Ошибка", default, MessageBoxIcon.Error);
                         return false;
                     }
                 }
@@ -149,7 +149,7 @@ namespace HealthCare_Plus.Forms.Dashboard.Common
                     return true;
                 }
                 //SHOW ERRORS
-                MessageBox.Show(string.Join("\n", activeErrors), "Validation Error", default, MessageBoxIcon.Error);
+                MessageBox.Show(string.Join("\n", activeErrors), "Ошибка проверки", default, MessageBoxIcon.Error);
 
                 return false;
             }
