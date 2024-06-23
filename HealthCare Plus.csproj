@@ -58,7 +58,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B30C12910A8540A8536A2971AA7F812A85AE6E65</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>CE97C5433472741F2E1649467541D49EEAF145CF</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>HealthCare Plus_1_TemporaryKey.pfx</ManifestKeyFile>
@@ -74,6 +74,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>medicine.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>df.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
@@ -247,6 +253,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HealthcareplusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HealthcareplusDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HealthcareplusDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +418,29 @@
     </None>
     <None Include="DataSets\HealthcareplusDataSet.xss">
       <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="df.pfx" />
+    <None Include="HealthcareplusDataSet.xsc">
+      <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HealthcareplusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HealthcareplusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HealthcareplusDataSet.xss">
+      <DependentUpon>HealthcareplusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HealthcareplusDataSet1.xsc">
+      <DependentUpon>HealthcareplusDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HealthcareplusDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HealthcareplusDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HealthcareplusDataSet1.xss">
+      <DependentUpon>HealthcareplusDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="DataSets\PaymentsDataSet.xsc">

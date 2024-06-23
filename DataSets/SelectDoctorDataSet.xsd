@@ -46,8 +46,8 @@ SELECT id, first_name, role FROM Users WHERE (id = @id)</CommandText>
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="id" DataSetColumn="id" />
-              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
-              <Mapping SourceColumn="role" DataSetColumn="role" />
+              <Mapping SourceColumn="first_name" DataSetColumn="Имя" />
+              <Mapping SourceColumn="role" DataSetColumn="Роли" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -59,18 +59,18 @@ SELECT id, first_name, role FROM Users WHERE (id = @id)</CommandText>
   <xs:element name="SelectDoctorDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SelectDoctorDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SelectDoctorDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Users" msprop:Generator_RowClassName="UsersRow" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowEvArgName="UsersRowChangeEvent" msprop:Generator_TablePropName="Users" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_UserTableName="Users" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_TableVarName="tableUsers">
+        <xs:element name="Users" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowEvArgName="UsersRowChangeEvent" msprop:Generator_TablePropName="Users" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_UserTableName="Users" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_RowClassName="UsersRow" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_TableVarName="tableUsers">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:long" />
-              <xs:element name="first_name" msprop:Generator_UserColumnName="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name">
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:long" />
+              <xs:element name="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_UserColumnName="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="role" msprop:Generator_UserColumnName="role" msprop:Generator_ColumnPropNameInTable="roleColumn" msprop:Generator_ColumnPropNameInRow="role" msprop:Generator_ColumnVarNameInTable="columnrole">
+              <xs:element name="Роли" msprop:Generator_ColumnPropNameInTable="РолиColumn" msprop:Generator_ColumnPropNameInRow="Роли" msprop:Generator_UserColumnName="Роли" msprop:Generator_ColumnVarNameInTable="columnРоли">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

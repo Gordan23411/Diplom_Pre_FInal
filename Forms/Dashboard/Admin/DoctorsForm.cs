@@ -24,6 +24,10 @@ namespace HealthCare_Plus.Forms.Dashboard.Admin
         //ONLOAD FUNCTION
         private void DoctorsForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "healthcareplusDataSet1.DoctorProfiles". При необходимости она может быть перемещена или удалена.
+            this.doctorProfilesTableAdapter1.Fill(this.healthcareplusDataSet1.DoctorProfiles);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "healthcareplusDataSet.DoctorProfiles". При необходимости она может быть перемещена или удалена.
+            this.doctorProfilesTableAdapter.Fill(this.healthcareplusDataSet.DoctorProfiles);
             LoadDoctorDataFromDB();
             update_doc_btn.Enabled = false;
             delete_btn.Enabled = false;
@@ -49,32 +53,6 @@ namespace HealthCare_Plus.Forms.Dashboard.Admin
                 Console.WriteLine(ex.Message);
                 return;
             }
-        }
-
-        //DATA GRID VIEW CELL DOUBLE CLICK
-        private void OnCellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex == -1)
-                return; // RETURN IF HEADER CLICKED
-
-            isSelectedUser = true;
-            //ENABLE UPDATE AND DELETE BUTTONS
-            update_doc_btn.Enabled = true;
-            delete_btn.Enabled = true;
-
-            DataGridViewRow selectedRow = doctorsDataGridView.Rows[e.RowIndex];
-            selectedUserID = Int64.Parse(selectedRow.Cells[0].Value.ToString());
-            first_name_input.Text = selectedRow.Cells[1].Value.ToString();
-            last_name_input.Text = selectedRow.Cells[2].Value.ToString();
-            email_input.Text = selectedRow.Cells[3].Value.ToString();
-            qualification_input.Text = selectedRow.Cells[4].Value.ToString();
-            Specialization_combobox.Text = selectedRow.Cells[5].Value.ToString();
-            phone_no_input.Text = selectedRow.Cells[6].Value.ToString();
-            location_input.Text = selectedRow.Cells[7].Value.ToString();
-            home_address_input.Text = selectedRow.Cells[8].Value.ToString();
-            hospital_address_input.Text = selectedRow.Cells[9].Value.ToString();
-            password_input.Enabled = false; //DISABLE PASSWORD INPUT
-            add_doc_btn.Enabled = false; //DISABLE ADD DOCTOR BUTTON
         }
 
         //HANDLE ADD DOCTOR BUTTON CLICK
@@ -460,6 +438,11 @@ namespace HealthCare_Plus.Forms.Dashboard.Admin
         }
 
         private void phone_no_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnCellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

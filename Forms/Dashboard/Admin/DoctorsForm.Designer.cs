@@ -72,10 +72,20 @@
             this.guna2Elipse12 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse13 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse14 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.healthcareplusDataSet = new HealthCare_Plus.HealthcareplusDataSet();
+            this.doctorProfilesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.doctorProfilesTableAdapter = new HealthCare_Plus.HealthcareplusDataSetTableAdapters.DoctorProfilesTableAdapter();
+            this.healthcareplusDataSet1 = new HealthCare_Plus.HealthcareplusDataSet1();
+            this.doctorProfilesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.doctorProfilesTableAdapter1 = new HealthCare_Plus.HealthcareplusDataSet1TableAdapters.DoctorProfilesTableAdapter();
             this.dataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.doctorsDataGridView)).BeginInit();
             this.crudPanel.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.healthcareplusDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorProfilesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.healthcareplusDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorProfilesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataPanel
@@ -95,7 +105,7 @@
             this.doctorsDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.doctorsDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
@@ -605,6 +615,34 @@
             // 
             this.guna2Elipse14.TargetControl = this.first_name_input;
             // 
+            // healthcareplusDataSet
+            // 
+            this.healthcareplusDataSet.DataSetName = "HealthcareplusDataSet";
+            this.healthcareplusDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // doctorProfilesBindingSource
+            // 
+            this.doctorProfilesBindingSource.DataMember = "DoctorProfiles";
+            this.doctorProfilesBindingSource.DataSource = this.healthcareplusDataSet;
+            // 
+            // doctorProfilesTableAdapter
+            // 
+            this.doctorProfilesTableAdapter.ClearBeforeFill = true;
+            // 
+            // healthcareplusDataSet1
+            // 
+            this.healthcareplusDataSet1.DataSetName = "HealthcareplusDataSet1";
+            this.healthcareplusDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // doctorProfilesBindingSource1
+            // 
+            this.doctorProfilesBindingSource1.DataMember = "DoctorProfiles";
+            this.doctorProfilesBindingSource1.DataSource = this.healthcareplusDataSet1;
+            // 
+            // doctorProfilesTableAdapter1
+            // 
+            this.doctorProfilesTableAdapter1.ClearBeforeFill = true;
+            // 
             // DoctorsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,6 +658,10 @@
             this.crudPanel.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.healthcareplusDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorProfilesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.healthcareplusDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorProfilesBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -667,5 +709,11 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse12;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse13;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse14;
+        private HealthcareplusDataSet healthcareplusDataSet;
+        private System.Windows.Forms.BindingSource doctorProfilesBindingSource;
+        private HealthcareplusDataSetTableAdapters.DoctorProfilesTableAdapter doctorProfilesTableAdapter;
+        private HealthcareplusDataSet1 healthcareplusDataSet1;
+        private System.Windows.Forms.BindingSource doctorProfilesBindingSource1;
+        private HealthcareplusDataSet1TableAdapters.DoctorProfilesTableAdapter doctorProfilesTableAdapter1;
     }
 }

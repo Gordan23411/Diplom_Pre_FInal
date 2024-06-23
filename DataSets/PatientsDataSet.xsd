@@ -70,12 +70,12 @@ SELECT id, first_name, last_name, email, contact_no, address, disease FROM Patie
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="id" DataSetColumn="id" />
-              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
-              <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
-              <Mapping SourceColumn="email" DataSetColumn="email" />
-              <Mapping SourceColumn="contact_no" DataSetColumn="contact_no" />
-              <Mapping SourceColumn="address" DataSetColumn="address" />
-              <Mapping SourceColumn="disease" DataSetColumn="disease" />
+              <Mapping SourceColumn="first_name" DataSetColumn="Имя" />
+              <Mapping SourceColumn="last_name" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="email" DataSetColumn="Почта" />
+              <Mapping SourceColumn="contact_no" DataSetColumn="Контакты" />
+              <Mapping SourceColumn="address" DataSetColumn="Адресс" />
+              <Mapping SourceColumn="disease" DataSetColumn="Что с ним" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -84,49 +84,49 @@ SELECT id, first_name, last_name, email, contact_no, address, disease FROM Patie
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="PatientsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="PatientsDataSet" msprop:Generator_DataSetName="PatientsDataSet">
+  <xs:element name="PatientsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PatientsDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PatientsDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Patients" msprop:Generator_RowEvHandlerName="PatientsRowChangeEventHandler" msprop:Generator_RowDeletedName="PatientsRowDeleted" msprop:Generator_RowDeletingName="PatientsRowDeleting" msprop:Generator_RowEvArgName="PatientsRowChangeEvent" msprop:Generator_TablePropName="Patients" msprop:Generator_RowChangedName="PatientsRowChanged" msprop:Generator_RowChangingName="PatientsRowChanging" msprop:Generator_TableClassName="PatientsDataTable" msprop:Generator_RowClassName="PatientsRow" msprop:Generator_TableVarName="tablePatients" msprop:Generator_UserTableName="Patients">
+        <xs:element name="Patients" msprop:Generator_RowClassName="PatientsRow" msprop:Generator_RowEvHandlerName="PatientsRowChangeEventHandler" msprop:Generator_RowDeletedName="PatientsRowDeleted" msprop:Generator_RowDeletingName="PatientsRowDeleting" msprop:Generator_RowEvArgName="PatientsRowChangeEvent" msprop:Generator_TablePropName="Patients" msprop:Generator_RowChangedName="PatientsRowChanged" msprop:Generator_UserTableName="Patients" msprop:Generator_RowChangingName="PatientsRowChanging" msprop:Generator_TableClassName="PatientsDataTable" msprop:Generator_TableVarName="tablePatients">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:long" />
-              <xs:element name="first_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_UserColumnName="first_name">
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:long" />
+              <xs:element name="Имя" msprop:Generator_UserColumnName="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="last_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_UserColumnName="last_name">
+              <xs:element name="Фамилия" msprop:Generator_UserColumnName="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_UserColumnName="email">
+              <xs:element name="Почта" msprop:Generator_UserColumnName="Почта" msprop:Generator_ColumnPropNameInTable="ПочтаColumn" msprop:Generator_ColumnPropNameInRow="Почта" msprop:Generator_ColumnVarNameInTable="columnПочта">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="contact_no" msprop:Generator_ColumnPropNameInRow="contact_no" msprop:Generator_ColumnPropNameInTable="contact_noColumn" msprop:Generator_ColumnVarNameInTable="columncontact_no" msprop:Generator_UserColumnName="contact_no">
+              <xs:element name="Контакты" msprop:Generator_UserColumnName="Контакты" msprop:Generator_ColumnPropNameInTable="КонтактыColumn" msprop:Generator_ColumnPropNameInRow="Контакты" msprop:Generator_ColumnVarNameInTable="columnКонтакты">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="12" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="address" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_UserColumnName="address">
+              <xs:element name="Адресс" msprop:Generator_UserColumnName="Адресс" msprop:Generator_ColumnPropNameInTable="АдрессColumn" msprop:Generator_ColumnPropNameInRow="Адресс" msprop:Generator_ColumnVarNameInTable="columnАдресс">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="150" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="disease" msprop:Generator_ColumnPropNameInRow="disease" msprop:Generator_ColumnPropNameInTable="diseaseColumn" msprop:Generator_ColumnVarNameInTable="columndisease" msprop:Generator_UserColumnName="disease">
+              <xs:element name="Что_x0020_с_x0020_ним" msprop:Generator_UserColumnName="Что с ним" msprop:Generator_ColumnPropNameInTable="Что_с_нимColumn" msprop:Generator_ColumnPropNameInRow="Что_с_ним" msprop:Generator_ColumnVarNameInTable="columnЧто_с_ним">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
